@@ -1,0 +1,20 @@
+{
+    "name": "node-testing-react",
+    "version": "1.0.0",
+    "description": "A project for experimenting with node testing",
+    "main": "index.js",
+    "author": "Matti Bar-Zeev",
+    "license": "MIT",
+    "engines": {
+        "node": ">=20.0.0"
+    },
+    "type": "module",
+    "scripts": {
+        "test": "node --test --test-reporter spec",
+        "test:watch": "node --test --test-reporter spec --watch ./src/**/*.test.js",
+        "test:coverage": "c8 node --test"
+    },
+    "devDependencies": {
+        "c8": "^7.13.0"
+    }
+}
